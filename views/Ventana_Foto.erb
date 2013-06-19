@@ -1,0 +1,25 @@
+<HTML>
+	<HEAD>
+			<TITLE>Aplicacion de Ruby en Sinatra</TITLE>
+	</HEAD>
+	<BODY>
+		<H3><CENTER>Proyecto programado #4 Ruby en Sinatra</CENTER></H3>
+		<HR>
+			Proyecto hecho en Ruby version 1.8 con HTML
+			montado en Sinatra, con una conexion en Instagram.
+		<HR>
+		<P> Imagen numero <%= $Actual %> de <%= $Total %></P>
+		<P>
+			<IMG SRC = <%= $Foto %> width=400 height=200/>
+		</P>
+		<P> El titulo de la imagen es : <%= $Titulo %> </P>
+		<form action="/siguiente_foto" method="post">
+			<input type="submit" value="Siguiente pagina">
+		</form>
+		<P>
+		<form action="/twitteo" method="post">
+			<input type="submit" value="Tweet Photo">
+		</form>
+		</P>
+	</BODY>
+</HTML>

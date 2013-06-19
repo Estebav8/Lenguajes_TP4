@@ -1,0 +1,33 @@
+<HTML>
+	<HEAD>
+		<TITLE>Aplicacion de Ruby en Sinatra</TITLE>
+	</HEAD>
+	<BODY>
+		<H3><CENTER>Proyecto programado #4 Ruby en Sinatra</CENTER></H3>
+		<BODY BGCOLOR="#21CBE6" TEXT="#FFFFFF">
+		<HR>
+			Proyecto hecho en Ruby version 1.8 con HTML
+			montado en Sinatra, con una conexion en Instagram.
+		</HR>
+		<P>Ventana de presentacion</P>
+		<P>Sistema de Logueo con Twitter</P>
+		<P>Si no desea conectarse por favor presiones el boton para continuar</P>
+		<form  action="/continuar" method="post">
+			<input type="submit" value="Por favor seguir adelante.">
+		</form>
+		<P>
+		<P>
+		<P>Si desea conectarse por favor siga el siguiente link e inserte su usuario y contrasena.</P>
+		<P>Para mayor comodidad por favor abra el link en otra pestana..</P>
+		<P>
+		<a href="<%= $Url_acceso%>">Link de conexion conTwitter</a>
+		</P>
+		<P>Despues de dar los permisos por favor presione el boton</P>
+		<P>Conexion con Twitter fallida</P>
+		<form  action="/loguear" method="post">
+			<input type="submit" value="Log in Twitter">
+		</form>
+		<IMG SRC = "http://formacion.universiablogs.net/files/Logo-twitter.png" 
+			ALT="Ruby" ALING="LEFT" width=256 height=256/>
+	</BODY>
+</HTML>
